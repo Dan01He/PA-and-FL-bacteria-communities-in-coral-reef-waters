@@ -147,6 +147,7 @@ def ND(mat,beta=0.99,alpha=1,control=0):
 
 from pandas import pandas as pd
 
-df=pd.read_table("diag_forND.csv",sep=',',header=0,index_col=0) # metacor.csv with col and row names, with diag 0
+df=pd.read_table("diag_forND.csv",sep=',',header=0,index_col=0) 
 ND_df=ND(df)
 ND_df.to_csv('ND_out.csv')
+
