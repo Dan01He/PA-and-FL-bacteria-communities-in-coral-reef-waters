@@ -1,9 +1,34 @@
+# -*- coding: utf-8 -*-
+# Copyright (C) Dan He
+#
+# This file is part of the code accompanying:
+# "Regional environmental heterogeneity under contrasting anthropogenic pressures
+#  has differential effects on particle-attached than free-living bacteria
+#  communities in coral reef waters."
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+# For commercial or non-GPL licensing, please contact:
+#   Dan He <hugh_20@163.com>
+
+
 # -*- coding:utf-8 -*-
 from bct import *
 import pandas as pd
 import numpy as np
 import os
-#os.chdir('I:/PAPER/干旱氮添加实验/R_data')
+#os.chdir('I:/R_data')
 
 
 
@@ -24,4 +49,5 @@ zipi=np.vstack((np.array(adja.index),z,p,ci))
 np.savetxt("zipi.csv",np.transpose(zipi),fmt="%s,%1.4f,%1.4f,%d") 
 
 ## fin
+
 
